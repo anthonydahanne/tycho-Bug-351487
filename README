@@ -1,0 +1,14 @@
+- What?
+Those sample projects are here to demonstrate https://bugs.eclipse.org/bugs/show_bug.cgi?id=351487 .
+
+- How ?
+Clone the repo && mvn clean install
+
+- What will I see ?
+a failed build, since as of today tycho-p2-runtime is not updatable (not using simpleconfigurator to define its plugins and their start levels, not using a p2 profile to maintain its state)
+
+- What I should see instead ?
+a successful build and the tycho-p2-runtime in $M2_REPO/org/eclipse/tycho/tycho-p2-runtime/0.13.0/eclipse updated with com.compuware.touchpoint_1.0.0.qualifier.jar located in its plugins directory + added in the bundles.info
+
+- Solutions so far ?
+See the bug comments https://bugs.eclipse.org/bugs/show_bug.cgi?id=351487
