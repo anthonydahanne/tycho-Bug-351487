@@ -1,11 +1,16 @@
 - What?
 Those sample projects are here to demonstrate https://bugs.eclipse.org/bugs/show_bug.cgi?id=351487 .
 
+- What do those projects do ?
+A product (com.compuware.touchpoint.product) containing a plugin (com.compuware.touchpoint.consumer) is being built with Tycho.
+The plugin (com.compuware.touchpoint.consumer) must execute a custom touchpoint action when being installed inside a product (https://github.com/anthonydahanne/tycho-Bug-351487/blob/master/com.compuware.touchpoint.consumer/META-INF/p2.inf)
+In the real life, this custom touchpoint action could be a migration step, a configuration step, etc...
+
 - How ?
 Clone the repo && mvn clean install
 
 - What will I see ?
-a failed build, since as of today tycho-p2-runtime is not updatable (not using simpleconfigurator to define its plugins and their start levels, not using a p2 profile to maintain its state)
+a failed build, since the touchpoint action is not known by tycho-p2-runtime and, as of today, tycho-p2-runtime is not updatable (not using simpleconfigurator to define its plugins and their start levels, not using a p2 profile to maintain its state)
 
 - What I should see instead ?
 a successful build and the tycho-p2-runtime in $M2_REPO/org/eclipse/tycho/tycho-p2-runtime/0.13.0/eclipse updated with com.compuware.touchpoint_1.0.0.qualifier.jar located in its plugins directory + added in the bundles.info
