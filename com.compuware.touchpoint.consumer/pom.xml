@@ -7,7 +7,6 @@
 		<groupId>com.compuware</groupId>
 		<artifactId>com.compuware.touchpoint.parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
-		<relativePath>../com.compuware.touchpoint.parent</relativePath>
 	</parent>
 	<artifactId>com.compuware.touchpoint.consumer</artifactId>
 	<packaging>eclipse-plugin</packaging>

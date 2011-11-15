@@ -14,7 +14,7 @@
 
    <features>
       <feature id="com.compuware.touchpoint.consumer.feature" version="0.0.0"/>
-      <!-- no need to include the touchpoint feature in the product feature id="com.compuware.touchpoint.feature" version="0.0.0"/-->
+      <feature id="com.compuware.touchpoint.feature" version="0.0.0"/>
       <feature id="org.eclipse.rcp" version="0.0.0"/>
    </features>
 
