@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+
+<target name="Target platform for demonstrating problem with 3.8m4+ and custom touchpoint actions" sequenceNumber="5">
+<locations>
+<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.emf.sdk.feature.group" version="2.6.1.v20100914-1218"/>
+<repository location="http://download.eclipse.org/releases/helios"/>
+</location>
+<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="com.compuware.touchpoint.feature.feature.group" version="1.0.0.201202032229"/>
+<unit id="com.compuware.touchpoint.consumer.feature.feature.group" version="1.0.0.201202032229"/>
+<repository location="http://anthonydahanne.github.com/tycho-Bug-351487/"/>
+</location>
+</locations>
+</target>
